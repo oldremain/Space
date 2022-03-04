@@ -173,8 +173,6 @@ span:nth-child(3) {
   }
   .header__burger {
     display: flex;
-    position: fixed;
-    right: 15px;
     transition: all 0.5s ease;
     &.active span {
       width: 100%;
@@ -182,6 +180,8 @@ span:nth-child(3) {
     }
   }
   .header__burger.active {
+    position: fixed;
+    right: 15px;
     span:first-child {
       transform: rotate(45deg);
     }
