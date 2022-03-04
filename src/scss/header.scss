@@ -113,6 +113,23 @@ span:nth-child(3) {
     line-height: 144%;
     color: #ffffff;
   }
+  &:hover {
+    animation: letter 1s ease infinite;
+  }
+}
+@keyframes letter {
+  0% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
+  50% {
+    letter-spacing: 3px;
+    opacity: 0.8;
+  }
+  100% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1200px) {
