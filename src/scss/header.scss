@@ -85,6 +85,7 @@ span:nth-child(3) {
 .header__main {
   max-width: 753px;
   padding: 16px 0;
+  position: relative;
 }
 .header__title {
   font-size: 20px;
@@ -92,8 +93,19 @@ span:nth-child(3) {
   line-height: 140%;
   text-transform: uppercase;
   margin: 0 0 27px 0;
+  opacity: 0;
+  animation: opacity 4s ease 3s forwards;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .header__subtitle {
+  height: 202px;
   font-size: 48px;
   font-weight: 700;
   line-height: 140%;
@@ -107,6 +119,7 @@ span:nth-child(3) {
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
+  letter-spacing: 2px;
   a {
     font-size: 18px;
     font-weight: 900;
@@ -119,15 +132,15 @@ span:nth-child(3) {
 }
 @keyframes letter {
   0% {
-    letter-spacing: 0;
+    letter-spacing: 2px;
     opacity: 1;
   }
   50% {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     opacity: 0.8;
   }
   100% {
-    letter-spacing: 0;
+    letter-spacing: 2px;
     opacity: 1;
   }
 }
